@@ -1,0 +1,27 @@
+{
+    "name": "My first PWA",
+    "short_name": "First PWA",
+    "icons": [
+        {
+            "src": "/mark.png",
+            "sizes": "2178x2142",
+            "type": "image/png"
+        },
+        {
+            "src": "/tiny.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/maskable.png",
+            "purpose": "maskable",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

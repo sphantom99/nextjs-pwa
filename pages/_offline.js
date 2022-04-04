@@ -3,12 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const RequestNotificationAccess = ()=> {
-    Notification.requestPermission()
-  }
-  const SendNotification = () => {
-   const myNotification = new Notification("Hello There!", {image: '/mark.png'})
-  }
   return (
     <div className={styles.container}>
       <Head>
@@ -19,20 +13,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js! (OFFLINE)</a>
         </h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-        <a href="#" className={styles.card} onClick={()=>{RequestNotificationAccess()}}>
-            <h2>Enable Notifications &rarr;</h2>
-            <p>Enable Notifications from us to get the latest news about everything!</p>
-          </a>
-          <a href="#" className={styles.card} onClick={()=>{SendNotification()}}>
-            <h2>Send Notifications &rarr;</h2>
-          </a>
+
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
