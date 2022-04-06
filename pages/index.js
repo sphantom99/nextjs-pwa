@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import Link from 'next/link'
 export default function Home() {
   const RequestNotificationAccess = ()=> {
     Notification.requestPermission()
@@ -33,6 +33,9 @@ export default function Home() {
           <a href="#" className={styles.card} onClick={()=>{SendNotification()}}>
             <h2>Send Notifications &rarr;</h2>
           </a>
+          <Link href="/createNotification" className={styles.card} passHref>
+            <h2> createNotification page &rarr;</h2>
+          </Link>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
